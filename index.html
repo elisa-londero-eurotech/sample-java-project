@@ -59,8 +59,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#latest-code-updates" class="nav-link">Latest code updates</a>
+            <li class="nav-item" data-level="1"><a href="#introduction" class="nav-link">Introduction</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#github-documentation-repositories" class="nav-link">GitHub Documentation Repositories</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -68,22 +72,48 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="latest-code-updates">Latest code updates</h1>
-<p>This is a list of the methods and classes that have been created recently:</p>
+<h1 id="introduction">Introduction</h1>
+<p>Version: {{ docs_version }}</p>
+<p>We have been discussing about a readme.io alternative for the documentation of our software products.
+The requirements are summarized as follows:</p>
 <ul>
-<li>
-<p>method name: "sayHello"</p>
-</li>
-<li>
-<p>method name: "run"</p>
-</li>
-<li>
-<p>method name: "sayHello"</p>
-</li>
-<li>
-<p>method name: "run"</p>
-</li>
-</ul></div>
+<li>Documentation files written in Markdown</li>
+<li>Documentation stored in a github repo accessible to developers</li>
+<li>Support for versioned documentation</li>
+<li>Support for web hosting on custom domain</li>
+<li>Support for search on the web hosted documentation</li>
+<li>Support for PDF export</li>
+<li>Review documentation while editing it</li>
+<li>Product professional looking documentation pages</li>
+</ul>
+<p>We looked at several tools: </p>
+<ul>
+<li>http://readme.com/</li>
+<li>http://readthedocs.com/</li>
+<li>http://gitbook.com/</li>
+<li>https://pages.github.com</li>
+</ul>
+<p>Our current choice would be a combination of the following tools:</p>
+<ul>
+<li>https://www.mkdocs.org/</li>
+<li>its theme Material for MkDocs (https://squidfunk.github.io/mkdocs-material/)</li>
+<li>hosting in https://pages.github.com</li>
+</ul>
+<p>This guide describes the setup and can be used as a template for new documentation repositories.</p>
+<h2 id="github-documentation-repositories">GitHub Documentation Repositories</h2>
+<p>We will create dedicated GitHub repositories for the product documentation.
+We currently envision the following:</p>
+<ul>
+<li><code>github.com/eurotech/docs-guide</code>: this guide</li>
+<li><code>github.com/eurotech/docs-el</code>: for Everyware Linux Documentation</li>
+<li><code>github.com/eurotech/docs-esf</code>: for Everyware Software Framework Documentation</li>
+<li><code>github.com/eurotech/docs-ec</code>: for Everyware Cloud Documentation</li>
+</ul>
+<p>Checkout the documentation git repository you want to contribute to or create a new one.
+For testing purposes, check out the docs-guide repository and review its structure.
+```
+git clone https://github.com/eurotech/docs-guide.git
+git remote add docs-guide https://github.com/eurotech/docs-guide.git</p></div>
             </div>
         </div>
 
@@ -168,5 +198,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-10 12:18:10.581585+00:00
+Build Date UTC : 2021-03-12 16:00:34.545132+00:00
 -->
